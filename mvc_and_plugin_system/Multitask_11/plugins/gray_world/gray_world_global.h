@@ -1,0 +1,12 @@
+#ifndef GRAY_WORLD_GLOBAL_H
+#define GRAY_WORLD_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(GRAY_WORLD_LIBRARY)
+#  define GRAY_WORLDSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define GRAY_WORLDSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // GRAY_WORLD_GLOBAL_H
